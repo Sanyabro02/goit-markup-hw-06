@@ -101,7 +101,15 @@
         <ul class="team-list">
           <li class="list-item">
             <div class="list-item-img-wrap">
-              <img class="list-img" src="./images/img-1.jpg" alt="продукт дезайнер" width="264">
+              <img 
+              srcset="
+              ../images/retina/img-1.jpg 1x,
+              ../images/retina/img-1@2x.jpg 2x
+              "
+              src="./images/img-1.jpg" 
+              alt="продукт дезайнер" 
+              class="list-img"
+              width="264">
             </div>
             <div class="list-item-inner">
               <h3 class="title">Mark Guerrero</h3>
@@ -140,7 +148,11 @@
           </li>
           <li class="list-item">
             <div class="list-item-img-wrap">
-              <img class="list-img" src="./images/img-2.jpg" alt="фронтенд розробник" width="264">
+              <img class="list-img"
+              srcset="" 
+              src="./images/img-2.jpg" 
+              alt="фронтенд розробник" 
+              width="264">
             </div>
 
             <div class="list-item-inner">
@@ -424,7 +436,7 @@
     </div>
   </footer>
 
-  <div class="backdrop">
+  <div class="backdrop is-open">
     <div class="modal-window">
       <button class="btn-close" type="button">
         <svg class="icon-close" width="8" height="8">

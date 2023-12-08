@@ -165,6 +165,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-resolution: 192dpi){
+  .top{
+    background-image: 
+    url(../images/retina/top-bg-desctop@2x.jpg);
+  }
+}
 .top-title {
   max-width: 496px;
   font-size: 56px;
@@ -511,7 +517,11 @@ body {
 
 
 /* modal-window */
-
+.backdrop .is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .backdrop {
   position: fixed;
@@ -524,6 +534,10 @@ body {
   cubic-bezier(0.4, 0, 0.2, 1),  
   visibility 250ms 
   cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   }
 
   
