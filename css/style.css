@@ -73,13 +73,14 @@ body {
 /* header style */
 
 @media screen and (min-width: 320px){
-
+.header{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .header-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 .info-list{
   display: none;
@@ -107,6 +108,7 @@ text-transform: uppercase;
 }
 .mobile-menu-container{
   position: relative;
+
 }
 .mobile-menu-wraper{
   position: fixed;
@@ -116,6 +118,7 @@ text-transform: uppercase;
   height: 100%;
   z-index: 99999999;
   background-color: #fff;
+  padding: 72px 24px 40px 16px;
 
   transform: translateX(100%);
   transition: transform 250ms linear;
@@ -137,8 +140,7 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-top: 72px;
-  padding-bottom: 168px;
+  
 }
 .mobile-menu-link{
   font-weight: 700;
@@ -441,12 +443,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .mobile-menu-open-btn{
   display: none;
 }
+.header{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .header-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  
 }
 .nav{
   display: flex;
@@ -602,9 +607,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 
 
-@media(min-width: 1168px){
+@media(min-width: 1158px){
   .container{
-    min-width: 1168px;
+    min-width: 1158px;
   }
   .header-container{
     padding: 26px 0;
